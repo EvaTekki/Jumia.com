@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Jumia.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<linK rel="stylesheet" href="jumia.css">
+  </head>
+  <body>
+    <div class="gif">
+      <img class="gif" src="images/7.gif">
+    </div>
+    <div class="header-1">
+      <div class="header-1-left">
+        <img class="header-1-left-icon" src="icons/images-removebg-preview.png">
+        Sell on Jumia
+      </div>
+      <div class="header-1-right">
+          <img class="header-1-right-icon1" src="icons/jumia-star.svg">
+          <img class="header-1-right-icon2" src="icons/play.svg">
+      </div>
+    </div>
+    <div class="header-position">
+      <div class="header">
+        <div class="header-left">
+          <img class="header-left-icon" src="icons/menu-1.svg">
+          <img class="header-left-icon3" src="icons/jumia-star.svg">
+        </div>
+        <div class="header-right">
+          <img class="header-left-icon" src="icons/profil-head.svg">
+          <img class="header-left-icon" src="icons/cart-1.svg">
+        </div>
+      </div>
+      <div class="header-search-bar">
+        <input type="text" placeholder="Search products, brand and categories" class="search-header-bar">
+      </div>
+      <div class="large-screen-header">
+        <button class="search-button">Search</button>
+        <div class="large-screen-menu">
+          <img class="header-left-icons" src="icons/profil-head.svg">
+          Account
+          <img class="header-left-icons" src="icons/pointing down.svg">
+        </div>
+        <div class="large-screen-help">
+          <img class="header-left-icons" src="icons/help.svg">
+          Help
+          <img class="header-left-icons" src="icons/pointing down.svg">
+        </div>
+        <div class="large-screen-cart">
+          <img class="header-left-icons" src="icons/cart-1.svg">
+          Cart
+        </div>
+      </div>
+    </div>
+    <div class="call">
+      CALL TO ORDER: 07006000000, 02018883300
+    </div>
+    <div class="section-1">
+        <img class="section-1-ads" src="images/dektop-1.jpg">
+        <img class="section-1-ads" src="images/4.png">
+        <img class="section-1-ads" src="images/3.jpg">
+        <img class="section-1-ads" src="images/2.jpg">
+        <img class="section-1-ads" src="images/3.jpg">
+        <img class="section-1-ads" src="images/dektop-1.jpg">
+        <img class="section-1-ads" src="images/3.jpg">
+        <img class="section-1-ads" src="images/4.png">
+        <img class="section-1-ads" src="images/dektop-1.jpg">
+    </div>
+    <div class="section-1-large-screen">
+      <div class="left">
+        <a> <img class="icono" src="icons/www.jumia.com.ng.svg"> Games</a>
+        <a> <img class="icono" src="icons/www.jumia.com.ng (1).svg">Automoblies</a>
+        <a> <img class="icono" src="icons/www.jumia.com.ng (2).svg"> Clothes</a>
+        <a><img class="icono" src="icons/www.jumia.com.ng (3).svg">Beauty</a>
+        <a> <img class="icono" src="icons/www.jumia.com.ng (4).svg">Appliances</a>
+        <a><img class="icono" src="icons/www.jumia.com.ng (5).svg">Systems</a>
+        <a> <img class="icono" src="icons/www.jumia.com.ng.svg"> Games</a>
+        <a> <img class="icono" src="icons/www.jumia.com.ng (1).svg">Automoblies</a>
+        <a> <img class="icono" src="icons/www.jumia.com.ng (2).svg"> Clothes</a>
+        <a><img class="icono" src="icons/www.jumia.com.ng (3).svg">Beauty</a>
+        <a> <img class="icono" src="icons/www.jumia.com.ng (4).svg">Appliances</a>
+        <a><img class="icono" src="icons/www.jumia.com.ng (5).svg">Systems</a>
+      </div>
+      <div class="middle">
+        <img class="section-1-ads" src="images/dektop-1.jpg">
+      </div>
+      <div class="right">
+        <div class="right-right">
+          <div>
+            <img class="icono" src="icons/calll.svg"> Call to place order: 08116341774
+          </div>
+          <div>
+            <img class="icono" src="icons/call3.svg"> Sell on Jumia
+          </div>
+          <div>
+            <img class="icono" src="icons/call1.svg"> Best Deals
+          </div>
+        </div>
+        <div class="left-left">
+          <img class="force" src="images/JFORCE-2.gif">
+        </div>
+      </div>
+
+    </div>
+     <div class="section-2">
+      <div class="section-2-details">
+         <img src="images/clearance.png"> 
+         <p>Up to 80% off</p>
+      </div>
+      <div class="section-2-details">
+          <img src="images/appliances.png"> 
+          <p>appliances</p>
+      </div>
+      <div class="section-2-details">
+          <img src="images/phones.png"> 
+          <p>Phone & tablets</p>
+      </div>
+      <div class="section-2-details">
+          <img src="images/fashion.png"> 
+          <p>fashion</p>
+      </div>
+    </div>
+     <div class="section-3">
+        <img class="section-3-left" src="icons/time.svg">
+      <div class="section-3-middle">
+        <h3 class="section-3-flash"> Flash Sale</h3>
+        <p id="countdown">Time Left: </p>
+
+        <script>
+            // Set the countdown time (YYYY, MM (0-based), DD, HH, MM, SS)
+            const countDownDate = new Date("Mar 30, 2025 00:00:00").getTime();
+    
+            // Update the countdown every second
+            const interval = setInterval(function() {
+                const now = new Date().getTime();
+                const timeLeft = countDownDate - now;
+    
+                if (timeLeft > 0) {
+                    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+                    document.getElementById("countdown").innerHTML = 
+                        `Time Left: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+                } else {
+                    clearInterval(interval);
+                    document.getElementById("countdown").innerHTML = "Time's up!";
+                }
+            }, 1000);
+        </script>
+      </div>
+      <div class="section-3-right">
+        See All
+      </div>
+    </div>
+    <div class="section-4">
+        <div class="section-4-details">
+          <img  class="section-4-thumbnail" src="images/11.jpg">
+          <p class="section-4-name">HITHIUM 1kWh</p>
+          <p class="section-4-price"> &#8358;260, 000</p>
+          <div class="section-4-iteams-left">
+            64 items left
+          </div>
+          <div class="section-4-button">
+            <div class="section-4-button-half">
+
+            </div>
+          </div>
+          <button class="section-4-discount">-45%</button>
+        </div>
+        <div class="section-4-details">
+          <img  class="section-4-thumbnail" src="images/13.jpg">
+          <p class="section-4-name">HITHIUM 1kWh</p>
+          <p class="section-4-price"> &#8358;260, 000</p>
+          <div class="section-4-iteams-left">
+            64 items left
+          </div>
+          <div class="section-4-button">
+            <div class="section-4-button-half">
+
+            </div>
+          </div>
+          <button class="section-4-discount">-45%</button>
+        </div>
+        <div class="section-4-details">
+          <img  class="section-4-thumbnail" src="images/12.jpg">
+          <p class="section-4-name">HITHIUM 1kWh</p>
+          <p class="section-4-price"> &#8358;260, 000</p>
+          <div class="section-4-iteams-left">
+            64 items left
+          </div>
+          <div class="section-4-button">
+            <div class="section-4-button-half">
+
+            </div>
+          </div>
+          <button class="section-4-discount">-45%</button>
+        </div>
+        <div class="section-4-details">
+          <img  class="section-4-thumbnail" src="images/13.jpg">
+          <p class="section-4-name">HITHIUM 1kWh</p>
+          <p class="section-4-price"> &#8358;260, 000</p>
+          <div class="section-4-iteams-left">
+            64 items left
+          </div>
+          <div class="section-4-button">
+            <div class="section-4-button-half">
+
+            </div>
+          </div>
+          <button class="section-4-discount">-45%</button>
+        </div>
+        <div class="section-4-details">
+          <img  class="section-4-thumbnail" src="images/14.jpg">
+          <p class="section-4-name">HITHIUM 1kWh</p>
+          <p class="section-4-price"> &#8358;260, 000</p>
+          <div class="section-4-iteams-left">
+            64 items left
+          </div>
+          <div class="section-4-button">
+            <div class="section-4-button-half">
+
+            </div>
+          </div>
+          <button class="section-4-discount">-45%</button>
+        </div>
+        <div class="section-4-details">
+          <img  class="section-4-thumbnail" src="images/15.jpg">
+          <p class="section-4-name">HITHIUM 1kWh</p>
+          <p class="section-4-price"> &#8358;260, 000</p>
+          <div class="section-4-iteams-left">
+            64 items left
+          </div>
+          <div class="section-4-button">
+            <div class="section-4-button-half">
+
+            </div>
+          </div>
+          <button class="section-4-discount">-45%</button>
+        </div>
+        <div class="section-4-details">
+          <img  class="section-4-thumbnail" src="images/13.jpg">
+          <p class="section-4-name">HITHIUM 1kWh</p>
+          <p class="section-4-price"> &#8358;260, 000</p>
+          <div class="section-4-iteams-left">
+            64 items left
+          </div>
+          <div class="section-4-button">
+            <div class="section-4-button-half">
+
+            </div>
+          </div>
+          <button class="section-4-discount">-45%</button>
+        </div>
+    </div>
+    <div class="section-5">
+        <div class="section-5-details">
+           <img src="images/111.gif"> 
+           <p>Up to 80% off</p>
+        </div>
+        <div class="section-5-details">
+            <img src="images/beauty.png"> 
+            <p>appliances</p>
+        </div>
+        <div class="section-5-details">
+            <img src="images/groceries.png"> 
+            <p>Phone & tablets</p>
+        </div>
+        <div class="section-5-details">
+            <img src="images/112.gif"> 
+            <p>fashion</p>
+        </div>
+          <div class="section-5-details">
+             <img src="images/113.gif"> 
+             <p>Up to 80% off</p>
+          </div>
+          <div class="section-5-details">
+              <img src="images/electronics.png"> 
+              <p>appliances</p>
+          </div>
+          <div class="section-5-details">
+              <img src="images/special-offer.png"> 
+              <p>Phone & tablets</p>
+          </div>
+          <div class="section-5-details">
+              <img src="images/essential-week.png"> 
+              <p>fashion</p>
+          </div>
+      </div>
+      <div class="section-6">
+        <h2  class="section-6-header">
+          Sponsored Products
+        </h2>
+        <div class="section-6-iteams">
+          <div class="section-6-details">
+            <img  class="section-6-thumbnail" src="images/A.jpg">
+            <p class="section-6-name">Iteam name</p>
+            <p class="section-6-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-88%</button>
+          </div>
+          <div class="section-6-details">
+            <img  class="section-6-thumbnail" src="images/B.jpg">
+            <p class="section-6-name">Iteam name</p>
+            <p class="section-6-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-40%</button>
+          </div>
+          <div class="section-6-details">
+            <img  class="section-6-thumbnail" src="images/C.jpg">
+            <p class="section-6-name">Iteam name</p>
+            <p class="section-6-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-42%</button>
+          </div>
+          <div class="section-6-details">
+            <img  class="section-6-thumbnail" src="images/D.jpg">
+            <p class="section-6-name">Iteam name</p>
+            <p class="section-6-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-41%</button>
+          </div>
+          <div class="section-6-details">
+            <img  class="section-6-thumbnail" src="images/E.jpg">
+            <p class="section-6-name">Iteam name</p>
+            <p class="section-6-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-71%</button>
+          </div>
+          <div class="section-6-details">
+            <img  class="section-6-thumbnail" src="images/F.jpg">
+            <p class="section-6-name">Iteam name</p>
+            <p class="section-6-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-678%</button>
+          </div>
+          <div class="section-6-details">
+            <img  class="section-6-thumbnail" src="images/G.jpg">
+            <p class="section-6-name">Iteam name</p>
+            <p class="section-6-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-45%</button>
+          </div>
+          <div class="section-6-details">
+            <img  class="section-6-thumbnail" src="images/H.jpg">
+            <p class="section-6-name">Iteam name</p>
+            <p class="section-6-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-50%</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-7">
+        <div class="section-7-header">
+          <h2>Last Viewed</h2>
+          <h3>Sell All</h3>
+        </div>
+        <div class="section-7-iteams">
+          <div class="section-7-details">
+            <img  class="section-7-thumbnail" src="images/A.jpg">
+            <p class="section-7-name">Iteam name</p>
+            <p class="section-7-price"> &#8358;items prices</p>
+            <button class="section-7-discount">-88%</button>
+          </div>
+          <div class="section-7-details">
+            <img  class="section-7-thumbnail" src="images/G.jpg">
+            <p class="section-7-name">Iteam name</p>
+            <p class="section-7-price"> &#8358;items prices</p>
+            <button class="section-7-discount">-88%</button>
+          </div>
+          <div class="section-7-details">
+            <img  class="section-7-thumbnail" src="images/C.jpg">
+            <p class="section-7-name">Iteam name</p>
+            <p class="section-7-price"> &#8358;items prices</p>
+            <button class="section-7-discount">-88%</button>
+          </div>
+          <div class="section-7-details">
+            <img  class="section-7-thumbnail" src="images/A.jpg">
+            <p class="section-7-name">Iteam name</p>
+            <p class="section-7-price"> &#8358;items prices</p>
+            <button class="section-7-discount">-88%</button>
+          </div>
+          <div class="section-7-details">
+            <img  class="section-7-thumbnail" src="images/G.jpg">
+            <p class="section-7-name">Iteam name</p>
+            <p class="section-7-price"> &#8358;items prices</p>
+            <button class="section-7-discount">-88%</button>
+          </div>
+          <div class="section-7-details">
+            <img  class="section-7-thumbnail" src="images/C.jpg">
+            <p class="section-7-name">Iteam name</p>
+            <p class="section-7-price"> &#8358;items prices</p>
+            <button class="section-7-discount">-88%</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-8-header">
+        <h3>
+          Limited Stock Deals
+        </h3>
+        <h4>Sell All</h4>
+      </div>
+      <div class="section-8">
+        <div class="section-8-iteams">
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/A.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-88%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/B.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-40%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/C.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-42%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/D.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-41%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/E.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-71%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/F.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-678%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/G.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-45%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/H.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-50%</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-9-header">
+        <h3>
+          Limited Stock Deals
+        </h3>
+        <h4 class="section-9-sell-all">Sell All</h4>
+      </div>
+      <div class="section-9">
+        <div class="section-9-iteams">
+          <div class="section-9-details">
+            <img  class="section-6-thumbnail" src="images/A.jpg">
+            <p class="section-9-name">Iteam name</p>
+            <p class="section-9-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-88%</button>
+          </div>
+          <div class="section-9-details">
+            <img  class="section-9-thumbnail" src="images/B.jpg">
+            <p class="section-9-name">Iteam name</p>
+            <p class="section-9-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-9-discount">-40%</button>
+          </div>
+          <div class="section-9-details">
+            <img  class="section-9-thumbnail" src="images/C.jpg">
+            <p class="section-9-name">Iteam name</p>
+            <p class="section-9-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-9-discount">-42%</button>
+          </div>
+          <div class="section-9-details">
+            <img  class="section-9-thumbnail" src="images/D.jpg">
+            <p class="section-9-name">Iteam name</p>
+            <p class="section-9-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-9-discount">-41%</button>
+          </div>
+          <div class="section-9-details">
+            <img  class="section-9-thumbnail" src="images/E.jpg">
+            <p class="section-9-name">Iteam name</p>
+            <p class="section-9-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-9-discount">-71%</button>
+          </div>
+          <div class="section-9-details">
+            <img  class="section-9-thumbnail" src="images/F.jpg">
+            <p class="section-9-name">Iteam name</p>
+            <p class="section-9-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-9-discount">-678%</button>
+          </div>
+          <div class="section-9-details">
+            <img  class="section-9-thumbnail" src="images/G.jpg">
+            <p class="section-9-name">Iteam name</p>
+            <p class="section-9-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-9-discount">-45%</button>
+          </div>
+          <div class="section-9-details">
+            <img  class="section-9-thumbnail" src="images/H.jpg">
+            <p class="section-9-name">Iteam name</p>
+            <p class="section-9-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-9-discount">-50%</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-8-header">
+        <h3>
+          Discount
+        </h3>
+        <h4>Sell All</h4>
+      </div>
+      <div class="section-8">
+        <div class="section-8-iteams">
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/A.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-88%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/B.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-40%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/C.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-42%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/D.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-41%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/E.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-71%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/F.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-678%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/G.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-45%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/H.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-50%</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-11-header">
+        <h3>
+          Kitchen Deals
+        </h3>
+        <h4>Sell All</h4>
+      </div>
+      <div class="section-8">
+        <div class="section-8-iteams">
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/A.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-88%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/B.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-40%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/C.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-42%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/D.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-41%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/E.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-71%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/F.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-678%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/G.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-45%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/H.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-50%</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-8-header">
+        <h3>
+          Val Deals
+        </h3>
+        <h4>Sell All</h4>
+      </div>
+      <div class="section-8">
+        <div class="section-8-iteams">
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/A.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-88%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/B.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-40%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/C.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-42%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/D.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-41%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/E.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-71%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/F.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-678%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/G.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-45%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/H.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-50%</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-10-header">
+        <h3>
+          Beauty
+        </h3>
+        <h4>Sell All</h4>
+      </div>
+      <div class="section-8">
+        <div class="section-8-iteams">
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/A.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-88%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/B.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-40%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/C.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-42%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/D.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-41%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/E.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-71%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/F.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-678%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/G.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-6-discount">-45%</button>
+          </div>
+          <div class="section-8-details">
+            <img  class="section-8-thumbnail" src="images/H.jpg">
+            <p class="section-8-name">Iteam name</p>
+            <p class="section-8-price"> &#8358;260, 000 -  &#8358;500, 000</p>
+            <button class="section-8-discount">-50%</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h1>Jumia Nigeria - Nigeria's No. 1 Shopping Destination.</h1>
+        <h2>Shop for Everything You Need on Jumia Nigeria.</h2>
+        <p>
+          Jumia Nigeria is the largest online shopping website in Nigeria.
+           We offer a platform where customers in any part of Nigeria can find 
+           and shop for all they need in one online store and that platform is the
+            Jumia shopping website. On the Jumia mobile
+        </p>
+        <a class="footer-see-more">See More</a>
+      </div>
+      <div class="footer-1">
+        <img class="rotate" src="icons/greater-than.svg">
+        BACK TO TOP
+      </div>
+      <div class="footer-2">
+        <a>Chat with us</a>
+        <a>Help Center</a>
+        <a>Contact Us</a>
+        <a>Terms & Conditions</a>
+        <a>Privacy Notice</a>
+        <a>Cookie Notice</a>
+        <a>Become a seller</a>
+        <a>Report a Product</a>
+        <a>Black Friday</a>
+        <p class="copyright">All Rights Reserved.</p>
+      </div>
+  </body>
+</html>
